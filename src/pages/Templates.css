@@ -1,0 +1,136 @@
+.templates-page {
+  background-color: #f8f9fa;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.category-filter {
+  margin-bottom: 40px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.template-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.template-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.template-preview {
+  position: relative;
+  overflow: hidden;
+}
+
+.template-preview img {
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.template-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.template-preview:hover .template-overlay {
+  opacity: 1;
+}
+
+.template-preview:hover img {
+  transform: scale(1.1);
+}
+
+.use-template-btn,
+.preview-btn {
+  padding: 8px 20px;
+  font-weight: 500;
+}
+
+.template-card .card-body {
+  padding: 25px;
+}
+
+.template-card .card-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.template-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.template-category {
+  background-color: rgba(74, 108, 247, 0.1);
+  color: var(--primary-color);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.template-rating {
+  color: var(--warning-color);
+  font-weight: 500;
+}
+
+.template-rating i {
+  margin-right: 5px;
+}
+
+.template-card .card-text {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 991px) {
+  .filter-buttons {
+    flex-wrap: wrap;
+  }
+  
+  .filter-btn {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .template-preview img {
+    height: 250px;
+  }
+}

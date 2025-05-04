@@ -1,0 +1,135 @@
+.site-footer {
+  background-color: #f8f9fa;
+  padding: 70px 0 20px;
+  color: var(--dark-color);
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.logo-text {
+  color: var(--dark-color);
+}
+
+.logo-accent {
+  color: var(--primary-color);
+}
+
+.footer-about p {
+  margin-bottom: 25px;
+  color: #6c757d;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  color: var(--dark-color);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 2px;
+  width: 40px;
+  background-color: var(--primary-color);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links li a {
+  color: #6c757d;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 15px;
+}
+
+.footer-links li a::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: var(--primary-color);
+  padding-left: 20px;
+}
+
+.footer-links li a:hover::before {
+  left: 5px;
+}
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  color: #6c757d;
+}
+
+.footer-contact li i {
+  margin-right: 10px;
+  color: var(--primary-color);
+  margin-top: 5px;
+}
+
+.footer-divider {
+  margin: 30px 0;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+@media (max-width: 991px) {
+  .footer-content > div {
+    margin-bottom: 40px;
+  }
+}

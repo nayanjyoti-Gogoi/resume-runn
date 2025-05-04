@@ -1,0 +1,76 @@
+.site-navbar {
+  padding: 15px 0;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.site-navbar.scrolled {
+  padding: 10px 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.site-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo-text {
+  color: var(--dark-color);
+}
+
+.logo-accent {
+  color: var(--primary-color);
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--dark-color) !important;
+  margin: 0 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.create-resume-btn {
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.create-resume-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(74, 108, 247, 0.3);
+}
+
+@media (max-width: 991px) {
+  .nav-link {
+    margin: 10px 0;
+  }
+  
+  .nav-link::after {
+    display: none;
+  }
+}
