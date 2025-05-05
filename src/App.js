@@ -10,7 +10,9 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import ResumeBuilder from './pages/ResumeBuilder';
 import Templates from './pages/Templates';
+import TemplatePreview from './pages/TemplatePreview';
 import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import FAQ from './pages/FAQ';
 import NotFound from './pages/NotFound';
 
@@ -24,7 +26,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/builder" element={<ResumeBuilder />} />
             <Route path="/templates" element={<Templates />} />
+            <Route path="/preview" element={<TemplatePreview />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

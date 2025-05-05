@@ -2,7 +2,7 @@ import React from 'react';
 import { Form, Button, Row, Col, Accordion } from 'react-bootstrap';
 import './ResumeForm.css';
 
-const ResumeForm = ({ section, data, onChange, onAdd, onRemove }) => {
+const ResumeForm = ({ section, data, onChange, onAdd, onRemove, generateSummary, isGeneratingSummary }) => {
   // Handle input change for non-multiple sections
   const handleChange = (fieldId, value) => {
     onChange(section.id, fieldId, value);
@@ -57,14 +57,48 @@ const ResumeForm = ({ section, data, onChange, onAdd, onRemove }) => {
         );
       case 'textarea':
         return (
-          <Form.Control
-            as="textarea"
-            rows={4}
-            placeholder={`Enter ${field.label}`}
-            value={value || ''}
-            onChange={handleFieldChange}
-            required={field.required}
-          />
+          <>
+            {field.id === 'summary' && section.id === 'personal' && generateSummary ? (
+              <div className="d-flex align-items-start">
+                <Form.Control
+                  as="textarea"
+                  rows={4}
+                  placeholder={`Enter ${field.label}`}
+                  value={value || ''}
+                  onChange={handleFieldChange}
+                  required={field.required}
+                  className="flex-grow-1"
+                />
+                <Button 
+                  variant="outline-primary" 
+                  className="ms-2"
+                  onClick={generateSummary}
+                  disabled={isGeneratingSummary}
+                  title="Generate summary based on your job title and experience"
+                >
+                  {isGeneratingSummary ? (
+                    <span><i className="fas fa-spinner fa-spin"></i></span>
+                  ) : (
+                    <span><i className="fas fa-magic"></i></span>
+                  )}
+                </Button>
+              </div>
+            ) : (
+              <Form.Control
+                as="textarea"
+                rows={4}
+                placeholder={`Enter ${field.label}`}
+                value={value || ''}
+                onChange={handleFieldChange}
+                required={field.required}
+              />
+            )}
+            {field.id === 'summary' && section.id === 'personal' && generateSummary && (
+              <Form.Text className="text-muted">
+                Click the magic wand to auto-generate a summary based on your job title and experience and “Please add the skills and years of experience in this.”.
+              </Form.Text>
+            )}
+          </>
         );
       case 'date':
         return (
@@ -191,6 +225,15 @@ const ResumeForm = ({ section, data, onChange, onAdd, onRemove }) => {
 
   // Render single section form
   const renderSingleForm = () => {
+    // Ensure data exists to prevent rendering errors
+    if (!data) {
+      return (
+        <div className="text-center py-4">
+          <p>Loading {section.title.toLowerCase()} data...</p>
+        </div>
+      );
+    }
+    
     return (
       <Form className="resume-section-form">
         <Row>

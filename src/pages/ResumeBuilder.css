@@ -161,17 +161,193 @@
   .preview-container {
     height: 800px;
   }
+  
+  .resume-preview-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: hidden;
+  }
+  
+  .resume-preview-wrapper .resume-preview {
+    transform-origin: top center;
+    max-width: 100%;
+  }
+  
+  .resume-preview-wrapper .resume-document {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .customize-options {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .customize-section {
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
+  .resume-builder-page {
+    padding: 20px 0;
+  }
+  
   .builder-title {
     font-size: 1.8rem;
+  }
+  
+  .builder-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    padding: 20px 15px;
+    border-radius: 8px;
   }
   
   .section-nav {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    position: relative;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .section-nav .nav-item {
+    width: auto;
+    flex-shrink: 0;
+  }
+  
+  .section-nav .nav-link {
+    padding: 8px 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+  
+  .section-nav .nav-link i {
+    margin-right: 5px;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
+  .preview-container {
+    height: 500px;
+    border-radius: 8px;
+  }
+  
+  .preview-header {
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .preview-header h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .preview-actions {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .resume-preview-wrapper {
+    padding: 10px;
+  }
+  
+  .resume-preview-wrapper .resume-preview {
+    transform: scale(0.8) !important;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .download-options {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .download-btn {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 576px) {
+  .resume-builder-page {
+    padding: 15px 0;
+  }
+  
+  .builder-title {
+    font-size: 1.5rem;
+  }
+  
+  .builder-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .form-container {
+    padding: 15px 10px;
+  }
+  
+  .section-nav .nav-link {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+  }
+  
+  .preview-container {
+    height: 450px;
+  }
+  
+  .preview-header h3 {
+    font-size: 1.2rem;
+  }
+  
+  .resume-preview-wrapper .resume-preview {
+    transform: scale(0.7) !important;
+  }
+  
+  .resume-preview-wrapper .resume-document {
+    padding: 10px;
+  }
+}
+
+/* Tablet specific adjustments */
+@media (min-width: 768px) and (max-width: 991px) {
+  .preview-header {
+    padding: 15px 20px;
+  }
+  
+  .resume-preview-wrapper {
+    padding: 15px;
+  }
+  
+  .resume-preview-wrapper .resume-preview {
+    transform: scale(0.9) !important;
+  }
+  
+  .section-nav {
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .section-nav .nav-item {
@@ -179,12 +355,7 @@
   }
   
   .section-nav .nav-link {
-    padding: 8px 12px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-  }
-  
-  .preview-container {
-    height: 600px;
+    margin-right: 8px;
+    margin-bottom: 8px;
   }
 }

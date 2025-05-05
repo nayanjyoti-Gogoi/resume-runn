@@ -56,6 +56,67 @@ export const templates = [
     font: 'Montserrat',
     sections: ['personal', 'experience', 'education', 'skills', 'achievements', 'certifications']
   },
+  // New templates based on the provided samples
+  {
+    id: 'green-diamond',
+    name: 'Green Diamond',
+    image: "https://img.freepik.com/free-vector/green-diamond-shape-logo-design_1071-149.jpg",
+    category: 'creative',
+    categoryName: 'Creative',
+    rating: 4.9,
+    description: 'Modern green resume with diamond photo frame and clean sections.',
+    color: '#4CAF50',
+    font: 'Montserrat',
+    sections: ['personal', 'education', 'experience', 'skills', 'projects', 'achievements']
+  },
+  {
+    id: 'minimal-modern',
+    name: 'Minimal Modern',
+    image: "https://img.freepik.com/free-vector/minimal-logo-design_1071-149.jpg",
+    category: 'minimal',
+    categoryName: 'Minimal',
+    rating: 4.9,
+    description: 'Clean and minimal design with a modern layout and subtle color accents.',
+    color: '#F8D7C4',
+    font: 'Inter',
+    sections: ['personal', 'experience', 'education', 'skills', 'projects', 'certifications']
+  },
+  {
+    id: 'professional-dark',
+    name: 'Professional Dark',
+    image: "https://img.freepik.com/premium-vector/expert-icon-skilled-employment-professional-symbol-vector_883533-157.jpg?w=2000",
+    category: 'professional',
+    categoryName: 'Professional',
+    rating: 4.8,
+    description: 'Elegant dark blue header with circular photo and clean content sections.',
+    color: '#2C3E50',
+    font: 'Montserrat',
+    sections: ['personal', 'experience', 'education', 'skills', 'certifications', 'languages']
+  },
+  {
+    id: 'modern-beige',
+    name: 'Modern Beige',
+    image: "https://img.freepik.com/free-vector/beige-minimal-logo_1071-149.jpg",
+    category: 'modern',
+    categoryName: 'Modern',
+    rating: 4.7,
+    description: 'Sophisticated beige resume with clean sections and professional layout.',
+    color: '#D2B48C',
+    font: 'Raleway',
+    sections: ['personal', 'experience', 'education', 'skills', 'certifications', 'achievements']
+  },
+  {
+    id: 'elegant-grid',
+    name: 'Elegant Grid',
+    image: "https://img.freepik.com/free-vector/elegant-grid-logo_1071-149.jpg",
+    category: 'elegant',
+    categoryName: 'Elegant',
+    rating: 4.8,
+    description: 'Modern grid-based layout with a professional color scheme and clean typography.',
+    color: '#C0B283',
+    font: 'Lato',
+    sections: ['personal', 'experience', 'education', 'skills', 'certifications', 'languages']
+  },
   // New elegant template
   {
     id: 'elegant',

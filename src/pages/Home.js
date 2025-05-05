@@ -16,7 +16,7 @@ const Home = () => {
         <Container>
           <Row className="align-items-center">
             <Col lg={6} className="hero-content">
-              <h1 className="hero-title">Create Your Professional Resume in Minutes</h1>
+              <h1 className="hero-title">Create Your free Professional Resume in Minutes with AI summury Generator<h4>No sign-up required</h4></h1>
               <p className="hero-description">
                 Stand out from the crowd with a professionally designed resume. 
                 Choose from multiple templates and customize them to match your style.

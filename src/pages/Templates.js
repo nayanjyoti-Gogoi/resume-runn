@@ -78,9 +78,10 @@ const Templates = () => {
                       Use This Template
                     </Button>
                     <Button 
+                      as={Link}
+                      to={`/preview?template=${template.id}`}
                       variant="outline-light"
                       className="preview-btn"
-                      onClick={() => window.open(`/preview?template=${template.id}`, '_blank')}
                     >
                       Preview
                     </Button>

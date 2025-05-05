@@ -4,7 +4,7 @@ export const categories = [
   { id: 'cover-letter', name: 'Cover Letter' },
   { id: 'interview', name: 'Interview Tips' },
   { id: 'career-advice', name: 'Career Advice' },
-  { id: 'job-search', name: 'Job Search' }
+  {id:  'summury', name:  'summury'}
 ];
 
 // Blog posts data
@@ -16,7 +16,7 @@ export const blogPosts = [
     category: 'resume-tips',
     author: 'Sarah Johnson',
     date: 'April 25, 2025',
-    image: 'https://via.placeholder.com/800x500',
+    image: 'https://beautysmartcare.com/wp-content/uploads/2019/10/bigstock-Helpful-Tips-Symbol-Megaphone-293263408.jpg',
     content: `
       <p>As we move further into 2025, the job market continues to evolve rapidly. With AI and automation transforming industries, your resume needs to adapt to stand out in this competitive landscape. Here are the most effective resume tips for 2025:</p>
       
@@ -54,7 +54,7 @@ export const blogPosts = [
     category: 'resume-tips',
     author: 'Michael Chen',
     date: 'April 18, 2025',
-    image: 'https://via.placeholder.com/800x500',
+    image: 'https://cdn.enhancv.com/ATS_Friendly_CV_a9d4aaf9bb.jpeg',
     content: `
       <p>In today's job market, your resume needs to impress both algorithms and humans. Before your resume reaches a recruiter, it typically must pass through an Applicant Tracking System (ATS). Here's how to ensure your resume is ATS-friendly while still appealing to human readers.</p>
       
@@ -98,7 +98,7 @@ export const blogPosts = [
     category: 'resume-tips',
     author: 'Emily Rodriguez',
     date: 'April 10, 2025',
-    image: 'https://via.placeholder.com/800x500',
+    image: 'https://thumbs.dreamstime.com/b/mistake-stamp-grunge-vintage-isolated-white-background-sign-148244411.jpg',
     content: `
       <p>Even the most qualified candidates can miss out on opportunities due to easily avoidable resume mistakes. Here are 10 common resume errors and how to fix them:</p>
       
@@ -142,7 +142,7 @@ export const blogPosts = [
     category: 'career-advice',
     author: 'David Wilson',
     date: 'April 5, 2025',
-    image: 'https://via.placeholder.com/800x500',
+    image: 'https://www.freeiconspng.com/uploads/resume-icon-png-5.png',
     content: `
       <p>Changing careers can be both exciting and challenging. One of the biggest hurdles is convincing employers that your experience in a different field is relevant to their needs. Here's how to craft a resume that effectively positions you for a career change:</p>
       
@@ -180,7 +180,7 @@ export const blogPosts = [
     category: 'interview',
     author: 'Jennifer Lee',
     date: 'March 28, 2025',
-    image: 'https://via.placeholder.com/800x500',
+    image: 'https://static.thenounproject.com/png/967938-200.png',
     content: `
       <p>Congratulations on landing an interview! Now it's time to prepare thoroughly to maximize your chances of success. This comprehensive guide covers everything you need to know before, during, and after your interview.</p>
       
@@ -236,7 +236,7 @@ export const blogPosts = [
     category: 'cover-letter',
     author: 'Robert Thompson',
     date: 'March 20, 2025',
-    image: 'https://via.placeholder.com/800x500',
+    image: 'https://www.squawkfox.com/wp-content/uploads/2009/09/cover_letter_wordle2.png',
     content: `
       <p>While resumes provide a structured overview of your qualifications, cover letters allow you to tell your professional story and explain why you're the ideal candidate. Here's how to write a cover letter that gets noticed:</p>
       
@@ -269,5 +269,51 @@ export const blogPosts = [
       
       <p>A well-crafted cover letter complements your resume and provides insight into your personality and communication skills. By tailoring each letter to the specific position and company, you demonstrate your genuine interest and increase your chances of landing an interview.</p>
     `
-  }
+  },
+  {
+   id: 'summury',
+   title: ' AI Summary Generator for Resumes: Boost Your Job Search Effortlessly',
+   excerpt: 'In today’s competitive world, your resume must stand out. But writing a crisp, professional summary can be tricky — that’s where an AI Summary Generator comes in.',
+   category: 'summury',
+   author: 'Sarah Johnson',
+   date: 'April 25, 2025',
+   image: 'https://miro.medium.com/v2/resize:fit:1200/1*IREz_ajiP8-jqYUPEfnkcA.jpeg',
+   content: `
+    <p>Here’s a detailed, point-wise guide explaining why this tool is a game changer for job seekers.</p>
+    
+    <h3> 1. What is an AI Resume Summary Generator?</h3>
+    <p>It’s an online tool that reads your resume details and automatically writes a polished summary.
+
+        Powered by AI (Artificial Intelligence), it understands your skills, experience, and achievements.
+
+        The output is a professional, impactful summary in seconds.</p>
+
+    <h3>2. Why Do You Need an AI Summary Generator?</h3>
+    <p>Many candidates struggle to describe themselves confidently.Hiring managers spend only 6–8 seconds scanning a resume.A great summary grabs attention fast and improves your shortlisting chances.</p>
+    <h3>3. Benefits of Using an AI-Powered Resume Summary Tool</h3>
+    <p>Saves Time: No need to spend hours thinking or writing.Professional Quality: AI writes in industry-standard language.ATS-Friendly: Optimized for Applicant Tracking Systems (ATS).Boost Confidence: Feel assured your resume is top-notch.</p>
+
+    <h3> 4. SEO Keywords to Focus On</h3>
+    <li>AI resume summary generator</li>
+    <li>automatic resume summary tool</li>
+    <li>AI-powered resume writing</li>
+    <li>job search AI tools,best AI resume summary online</li>
+
+    <h3> 5. Who Should Use an AI Summary Tool?</h3>
+    <ul>
+    <li>Freshers creating their first resume.</li>
+    <li>Experienced professionals updating their career summary.</li>
+    <li>Freelancers and gig workers pitching to new clients.</li>
+    <li>Students applying for internships or scholarships.</li>
+    
+    </ul>
+    <h3> 6. Final Thoughts</h3>
+    <p>An AI resume summary generator is more than just a fancy tool — it’s your secret weapon to stand out in today’s job market. Whether you’re a student, a professional, or a career changer, using AI can save time and help you craft a resume that gets noticed.</p>
+
+    <h3> Ready to Try?</h3>
+    <p>Use our free AI Summary Generator and supercharge your resume today!</P>`
+
+}
+
+    
 ];

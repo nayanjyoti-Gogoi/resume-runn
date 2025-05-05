@@ -120,7 +120,7 @@ const FAQ = () => {
             <div className="faq-contact">
               <h3>Still have questions?</h3>
               <p>If you couldn't find the answer to your question, feel free to contact us.</p>
-              <Button variant="outline-primary" size="lg" href="mailto:support@resumebuilder.com">
+              <Button variant="outline-primary" size="lg" href="mailto:gogoinayan73@gmail.com">
                 Contact Support
               </Button>
             </div>

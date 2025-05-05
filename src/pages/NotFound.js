@@ -10,7 +10,7 @@ const NotFound = () => {
         <Row className="justify-content-center">
           <Col md={8} lg={6} className="text-center">
             <div className="error-content">
-              <h1 className="error-code">404</h1>
+              <h1 className="error-code">101</h1>
               <h2 className="error-title">Page Not Found</h2>
               <p className="error-message">
                 The page you are looking for might have been removed, had its name changed,

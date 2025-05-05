@@ -1,4 +1,5 @@
 {
+  "homepage": "https://nayanjyoti-Gogoi.github.io/resume-builder-final-",
   "name": "resume-builder",
   "version": "0.1.0",
   "private": true,
@@ -16,9 +17,12 @@
     "react-router-dom": "^6.20.0",
     "react-scripts": "5.0.1",
     "react-to-pdf": "^1.0.1",
+    "react-toastify": "^11.0.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
